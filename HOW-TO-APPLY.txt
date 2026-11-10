@@ -1,0 +1,42 @@
+AVERY FOOTE PORTFOLIO — APPLY THE 7-PROJECT UPDATE
+
+This ZIP contains FOUR project files, arranged relative to the existing project root:
+  src/main.jsx
+  public/assets/projects/icollege-preview-v4.jpg
+  public/assets/projects/alphalaw-preview-v4.jpg
+  public/assets/projects/seatsone-preview-v4.jpg
+
+IMPORTANT: Do NOT drag the ZIP or an extra folder into your repo. Extract the CONTENTS
+of this ZIP directly into your EXISTING portfolio root containing package.json.
+The src/main.jsx file MUST be replaced.
+
+Recommended steps in CMD (adjust folder if yours is different):
+
+cd /d "D:\client\US-Avery\Avery-Foote-Portfolio-Media-Fix\Avery-Foote-Portfolio-Media-Fix"
+
+Then use File Explorer to copy the ZIP contents to this folder, or copy the ZIP here
+and extract it in PowerShell with this command (in the folder containing package.json):
+
+powershell -NoProfile -Command "Expand-Archive -LiteralPath '.\Avery-Foote-FIX-7-Projects-Update.zip' -DestinationPath '.' -Force"
+
+Confirm the new data actually replaced the old file:
+
+findstr /i "icollege" src\main.jsx
+findstr /i "alphalaw" src\main.jsx
+findstr /i "seatsone" src\main.jsx
+
+Push the changes:
+
+git add src/main.jsx public/assets/projects
+
+git commit -m "Add iCollege AlphaLaw and SEAtS ONE projects"
+
+git push origin main
+
+Then check that GitHub's main branch src/main.jsx contains "icollege" and Vercel
+shows a successful new production deployment. Refresh your public website.
+
+If git reports "nothing to commit", your local src/main.jsx was NOT replaced or
+this change is already committed. Check the file location using cd and dir.
+
+The original 4 projects, profile image, CSS, components and dependencies are unchanged.
