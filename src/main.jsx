@@ -57,7 +57,7 @@ const commandLinks = [
 
 const snapshot = [
   { value: "2013", label: "Engineering career began" },
-  { value: "4", label: "Live products featured" },
+  { value: "7", label: "Live products featured" },
   { value: "AI", label: "Agents, LLMs and RAG" },
   { value: "Cloud", label: "Azure and AWS" }
 ];
@@ -191,6 +191,39 @@ const projects = [
     description: "A real estate platform that enables homeowners to buy their next home before selling their current one, with less dependence on sale contingencies.",
     features: ["Buy-before-you-sell homeownership solutions", "Home equity and financing support", "Tools and partner services for smoother transactions"],
     detail: "Flyhomes helps people bridge the timing gap between buying a new home and selling an existing one. Its platform highlights home equity access and a network of lending and real estate partners."
+  },
+  {
+    id: "icollege",
+    thumbnail: "/assets/projects/icollege-preview-v4.jpg",
+    title: "iCollege",
+    category: "Education Technology",
+    domain: "icollege.pro",
+    link: "https://www.icollege.pro/",
+    description: "A cloud-based college management platform that connects admissions, student records, attendance, academic administration, and reporting for UK education providers.",
+    features: ["Admissions, applications, and enrolment workflows", "Student records, attendance, and academic administration", "Role-based portals, reporting, and compliance tracking"],
+    detail: "iCollege supports the complete student lifecycle from enquiry and application to enrolment, attendance, academic activity, and institutional reporting. Its connected portals help administrators, recruiters, teachers, and students work from structured records."
+  },
+  {
+    id: "alphalaw",
+    thumbnail: "/assets/projects/alphalaw-preview-v4.jpg",
+    title: "AlphaLaw",
+    category: "Legal AI",
+    domain: "alphalaw.io",
+    link: "https://www.alphalaw.io/",
+    description: "An AI-powered case management platform for personal injury law firms, connecting intake, case files, deadlines, documents, and client communication.",
+    features: ["Case intake, workflow, and deadline management", "AI-assisted document extraction and drafting", "Connected case communication, tasks, and insights"],
+    detail: "AlphaLaw brings personal injury case operations together in one workspace, from lead intake to settlement. Its Lexy AI capabilities assist with case reviews, document information extraction, drafting, and recommended next actions."
+  },
+  {
+    id: "seatsone",
+    thumbnail: "/assets/projects/seatsone-preview-v4.jpg",
+    title: "SEAtS ONE",
+    category: "Education Technology",
+    domain: "seatsone.com",
+    link: "https://seatsone.com/",
+    description: "An education operations platform connecting student attendance, engagement, academic scheduling, compliance, and campus operations.",
+    features: ["Attendance monitoring and student engagement insights", "Academic scheduling and campus operations", "Student support workflows, analytics, and compliance"],
+    detail: "SEAtS ONE helps education institutions coordinate planning, participation, student support, compliance, and campus operations. Its platform connects institutional data with workflows and intelligence so teams can spot concerns and respond earlier."
   }
 ];
 
@@ -717,7 +750,7 @@ function Projects() {
   return (
     <Section id="projects" label="Selected Projects" title="Real products. Real-world impact.">
       <p className="reveal mb-8 max-w-3xl text-base leading-8 text-slate-300">
-        A selection of live products I’ve worked on across wellness, healthcare, nutrition, and real estate.
+        A selection of live products I’ve worked on across wellness, healthcare, nutrition, real estate, education, and legal technology.
         Explore each platform or open a project card for a closer look.
       </p>
       <div className="reveal mb-7 flex flex-wrap gap-2" role="group" aria-label="Filter projects">
